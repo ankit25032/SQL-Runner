@@ -1,0 +1,142 @@
+.editor-container{
+  width: 100%;
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  
+
+}
+.editor{
+width: 60%;
+  padding: 30px;
+}
+.editor-utility{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+.run-btn,.export-btn{
+  
+  background-color: #3e85ff;
+  color: white;
+ border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-weight: 400;
+  padding: 16px;
+  gap: 5px;
+  align-items: center;
+}
+.run-btn:hover{
+  background-color: #0f58d5;
+  color: white;
+}
+.fa-file-export{
+  margin-right: 3px;
+}
+.export-btn{
+  padding: 10px; 
+
+background-color: rgb(114, 117, 117);
+cursor: pointer;
+margin-right: 30px;
+z-index:+33;
+}
+.export-btn:hover{
+    background-color: rgb(155, 153, 153);
+}
+.edit-title{
+  margin: 0;
+  text-align: left;
+  font-weight: 700;
+  font-size: large;
+}
+
+.q-container{
+  width: 25%;
+  height: max-content;
+padding-left: 10px;
+padding-right: 10px;
+padding: 20px;
+  
+}
+.recent{
+  width: 90%;
+  height: 250px;
+  border: 1px solid grey;
+  margin-top: 30px;
+  margin-left: 20px;
+  overflow: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.p1{
+  color: rgb(174, 0, 197);
+  font-weight: 800;
+
+}
+.p2{
+  font-size: smaller;
+ 
+}
+.ritem{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 0.5px solid grey;
+  background-color: #95979b10;
+  font-weight: 700;
+}
+.copy{
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.736);
+  cursor: pointer;
+  padding: 4px;
+}
+.copy:hover{
+  background-color: rgba(202, 207, 211, 0.489);
+}
+@media only screen and (max-width: 900px) {
+  .q-container{
+    width: 40%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .editor-container{
+    flex-wrap:wrap-reverse ;
+    justify-content: center;
+  
+  }
+
+  .q-container{
+width: 80vw;
+z-index: +55;
+  }
+  .recent{
+    display: none;
+    width: 90%;
+  }
+  .editor{
+    width: 600px;
+
+  }
+  .editor-utility{
+    width: 80%;
+  }
+  .run-btn,.export-btn{
+    padding: 8px;
+  }
+
+}

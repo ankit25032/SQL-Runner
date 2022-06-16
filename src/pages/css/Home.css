@@ -1,0 +1,21 @@
+.Home{
+    width: 100%;
+    overflow-x: hidden;
+}
+.Home-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+     
+}
+.workstation{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* media queries */
+

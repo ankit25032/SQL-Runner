@@ -1,0 +1,47 @@
+.cat-container{
+    width:20%;
+    min-width: 230px;
+    margin: 10px;
+    border: 1px solid grey;
+   text-align: center;
+   border-radius: 10px;
+margin-left: 30px;
+height: fit-content;
+}
+.cat-title{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3e85ff;
+    padding: 10px;
+}
+.cat-item{
+    padding: 2px;
+    padding-right: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+}
+.cat-item:hover{
+   
+    background-color: rgba(110, 105, 105, 0.138);
+    color: rgb(161, 30, 255);
+}
+
+.cat-item-name{
+    margin-left: 10px;
+    user-select: none;
+    pointer-events: none;
+
+}
+.cat-item p{
+    pointer-events: none;
+}
+
+.cat-focus{
+    background-color: rgba(110, 105, 105, 0.278);
+    color: rgb(161, 30, 255);
+}
