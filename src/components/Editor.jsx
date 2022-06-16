@@ -19,11 +19,11 @@ function Editor() {
     const runRef=useRef();
     const cRef=useRef();
     const [click,setclick]=useState(false);
-    const {category, setCategory}  = useContext(categoryContext);
-    const {sqlval, setsqlval}  = useContext(dataContext);
-    const { data, runtime, error } = useData(category);
-    const {rvalue, setrvalue}  = useContext(rvalueContext);
-    const {show,setshow} = useContext(showContext);
+    const {category}  = useContext(categoryContext);
+    const {sqlval}  = useContext(dataContext);
+    const { data, runtime } = useData(category);
+    const { setrvalue}  = useContext(rvalueContext);
+    const {setshow} = useContext(showContext);
 
     function onChange(newValue) {
       
@@ -40,7 +40,7 @@ function Editor() {
 
       useEffect(()=>{
         document.onkeydown=(e)=>{
-          if(e.ctrlKey&&e.code=="KeyM"){
+          if(e.ctrlKey&&e.code==="KeyM"){
             runRef.current.click()
            }
         }

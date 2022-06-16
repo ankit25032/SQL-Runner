@@ -1,14 +1,16 @@
 
-import React, {useState,useEffect,createContext, useContext} from "react";
-import Category from "../components/Category";
-import Editor from "../components/Editor";
-import Navbar from "../components/Navbar";
-import Table from "../components/Table";
+import React, {useState} from "react";
+
 import "./css/Home.css";
 import categoryContext from "../categoryContext";
 import showContext from "../context/showContext";
 import dataContext from "../context/dataContext";
 import rvalueContext from "../context/rvalueContext";
+
+const  Category =React.lazy( ()=> import("../components/Category")) ;
+const Editor =React.lazy( ()=> import("../components/Editor"));
+const Navbar =React.lazy( ()=> import( "../components/Navbar"));
+const Table =React.lazy( ()=> import( "../components/Table"));
 function Home() {
  
   const [category, setCategory] = useState("categories");

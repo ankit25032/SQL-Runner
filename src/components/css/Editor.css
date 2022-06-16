@@ -133,10 +133,12 @@ z-index: +55;
 
   }
   .editor-utility{
-    width: 80%;
+    width: 90%;
   }
   .run-btn,.export-btn{
+    margin-left: 20px;
     padding: 8px;
   }
+ 
 
 }

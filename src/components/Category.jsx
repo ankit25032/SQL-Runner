@@ -1,12 +1,12 @@
-import React,{useRef,useState,useContext} from 'react'
+import React,{useContext} from 'react'
 import TABLE_NAMES from '../constants/Table_Name'
 import "./css/Category.css"
 import categoryContext from "../categoryContext";
 
 function Category() {
-    const [table,settable] = useState("CATEGORIES");
+   
     const {category, setCategory}  = useContext(categoryContext);
-    const catRef=useRef();
+ 
     function handleCategory(idx,e) {
     const table=TABLE_NAMES[idx];
     document.querySelectorAll(".cat-focus").forEach(el=>el.classList.remove("cat-focus"));

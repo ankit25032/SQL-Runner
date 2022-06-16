@@ -24,10 +24,11 @@ function Table_data({category,data2}) {
     return(
     <>
     
-<span className="">
+<span >
           Search:{" "}
         </span>
         <input
+        className="inputbtn"
           type="text"
           value={value}
           onKeyDown={(e)=>{
@@ -64,18 +65,12 @@ function Table_data({category,data2}) {
     getTableProps,
     getTableBodyProps,
     headerGroups,
-    page,
+
     prepareRow,
-    previousPage,
-    nextPage,
-    canPreviousPage,
-    canNextPage,
     state,
-    setPageSize,
-    pageOptions,
-    gotoPage,
+
     rows,
-    pageCount,
+
     setGlobalFilter,
     preGlobalFilteredRows,
   } = useTable(

@@ -1,14 +1,14 @@
-import React,{useContext,useState,useEffect} from 'react'
+import React,{useContext,useEffect} from 'react'
 import Select from 'react-select'
 import dataContext from '../context/dataContext'
 import categoryContext from '../categoryContext';
 import rvalueContext from '../context/rvalueContext';
 import toast from 'react-hot-toast';
 function Query() {
-    const {sqlval, setsqlval}  = useContext(dataContext);
-    const {category, setCategory}  = useContext(categoryContext);
+    const { setsqlval}  = useContext(dataContext);
+    const { setCategory}  = useContext(categoryContext);
     const {rvalue, setrvalue}  = useContext(rvalueContext);
-    const [list,setlist]=useState(["fff"]);
+   
     const options = [
         { value: 'order_details', label: 'select * from order_details' },
         { value: 'categories', label: 'select * from categories' },
@@ -21,11 +21,9 @@ function Query() {
       
 useEffect(() => {
   const rlist=JSON.parse(localStorage.getItem('rlist'))
-  
   if(rlist){
   setrvalue(rlist);
-  }
-  
+  }  
 }, [])
 
   return (
