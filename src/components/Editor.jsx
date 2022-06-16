@@ -117,10 +117,10 @@ function Editor() {
             height: "35px",backgroundColor:"transparent"}} data={data} >
                         <button ref={cRef} style={{display:"none"}} ></button>
                         </CsvDownload>
-                        <button onClick={()=>{toast.success("Downloaded successfully");cRef.current.click()}} className='export-btn'><i class="fa-solid fa-file-export"></i> Export</button></>
+                        <button onClick={()=>{toast.success("Downloaded successfully");cRef.current.click()}} className='export-btn'> Export</button></>
                         :
                         
-                         <button onClick={()=>notify()} className='export-btn'><i class="fa-solid fa-file-export"></i> Export</button>
+                         <button onClick={()=>notify()} className='export-btn'> Export</button>
           }
             
             
