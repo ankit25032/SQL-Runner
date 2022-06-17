@@ -12,6 +12,12 @@ Try out live : [REACT SQL Runner](https://sql-runner-rosy.vercel.app/)
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
+## Libraries
+1.React-Ace
+2.React-dropdown
+3.react-json-to-csv
+4.React hot toast
+
 ## 👨‍💻 Features
 
 :white_check_mark: Users can get data of any of the predefined SQL queries either by using SQL Editor or Sidebar Menu.\
