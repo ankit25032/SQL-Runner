@@ -22,12 +22,14 @@ function Query() {
         { value: 'territories', label: 'select * from territories' },
       ]
 
-      
+     
 useEffect(() => {
   const rlist=JSON.parse(localStorage.getItem('rlist'))
   if(rlist){
   setrvalue(rlist);
   }  
+ 
+
 }, [])
 
   return (
@@ -41,7 +43,7 @@ useEffect(() => {
     
 <div className='recent'>
 <p className="p1">Recents Queries</p>
-{rvalue?
+{typeof(rvalue)==='object'?
 rvalue.map((val,index)=>{
     return (
 
