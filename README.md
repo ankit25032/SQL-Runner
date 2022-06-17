@@ -14,8 +14,11 @@ Try out live : [REACT SQL Runner](https://sql-runner-rosy.vercel.app/)
 
 ## Libraries
 1.React-Ace
+
 2.React-dropdown
+
 3.react-json-to-csv
+
 4.React hot toast
 
 ## 👨‍💻 Features
