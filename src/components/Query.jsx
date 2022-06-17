@@ -16,6 +16,10 @@ function Query() {
         { value: 'shippers', label: 'select * from shippers' },
         { value: 'employees', label: 'select * from employees' },
         { value: 'products', label: 'select * from products' },
+        { value: 'employee_territories', label: 'select * from employee_territories' },
+        { value: 'regions', label: 'select * from regions' },
+        { value: 'suppliers', label: 'select * from suppliers' },
+        { value: 'territories', label: 'select * from territories' },
       ]
 
       
@@ -37,7 +41,8 @@ useEffect(() => {
     
 <div className='recent'>
 <p className="p1">Recents Queries</p>
-{rvalue.map((val,index)=>{
+{rvalue?
+rvalue.map((val,index)=>{
     return (
 
     <div key={index} className='ritem'>
@@ -51,7 +56,9 @@ useEffect(() => {
     </div>
     
     )
-})}
+})
+:null}
+
 </div>
     </div>
   )
